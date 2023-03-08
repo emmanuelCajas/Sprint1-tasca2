@@ -23,9 +23,7 @@ public class Venta {
 	public void calcularTotal( ArrayList<Producto> listaProductos) throws VendaBuidaException,ArrayIndexOutOfBoundsException {		
 		
 		double suma=0;
-		
-		
-		
+			
 		if(listaProductos.size() == 0) {
 			throw new VendaBuidaException("VendaBuidaException Para hacer una venta primero debes añadir productos");
 			
@@ -35,6 +33,8 @@ public class Venta {
 			}
 			precioTotalVenta=suma;			 
 			System.out.println(listaProductos.toString() + " " + "Precio Total " + precioTotalVenta);
+			
+			//lanzando ArrayIndexOutOfBoundsException
 			throw new ArrayIndexOutOfBoundsException("ArrayIndexOutOfBoundsException atrapado");
 		}
 				
